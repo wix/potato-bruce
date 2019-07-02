@@ -288,12 +288,10 @@ module.exports = {
       },
       transformHooks: {
         postProcessor: (stylableResult) => {
-          // postcssFocusWithin.process(stylableResult.meta.outputAst);
           postcssFocusWithin.process(stylableResult.meta.outputAst).sync();
           return stylableResult;
         }
       }
-      
     })
   ].filter(Boolean),
   // Some libraries import Node modules but don't use them in the browser.

@@ -15,6 +15,13 @@
   background: #f0f0f0;
 }
 
+.root:focus-within {
+  color: red;
+}
+.root:focus-within label {
+  color: red;
+}
+
 /* empty classes serve as an exposed interface that can be customized externally */
 .top {}
 .top::after {}
